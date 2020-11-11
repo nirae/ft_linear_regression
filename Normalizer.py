@@ -23,7 +23,6 @@ class Normalizer(object):
         self.price_min = min(self.data['price'])
 
     def normalize_km(self, elem):
-        # return (elem - self.km_max) / (self.km_max - self.km_min)
         return (elem - self.km_min) / (self.km_max - self.km_min)
 
     def normalize_km_list(self, elems):
@@ -33,7 +32,6 @@ class Normalizer(object):
         return result
 
     def normalize_price(self, elem):
-        # return (elem - self.price_max) / (self.price_max - self.price_min)
         return (elem - self.price_min) / (self.price_max - self.price_min)
 
     def normalize_price_list(self, elems):
@@ -44,7 +42,6 @@ class Normalizer(object):
 
     def denormalize_km(self, elem):
         return (elem * (self.km_max - self.km_min) + self.km_min)
-        # return (elem * (self.km_max - self.km_min) + self.km_max)
 
     def denormalize_km_list(self, elems):
         result = []
@@ -54,7 +51,6 @@ class Normalizer(object):
 
     def denormalize_price(self, elem):
         return (elem * (self.price_max - self.price_min) + self.price_min)
-        # return (elem * (self.price_max - self.price_min) + self.price_max)
 
     def denormalize_price_list(self, elems):
         result = []

@@ -60,3 +60,9 @@ optional arguments:
   -t THETA, --theta THETA
                         input theta file
 ```
+
+## Resources
+
+https://bioinfo.iric.ca/fr/algorithme-du-gradient/
+https://mrmint.fr/gradient-descent-algorithm
+https://fr.wikipedia.org/wiki/Surapprentissage
