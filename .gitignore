@@ -1,0 +1,4 @@
+autos*
+.vscode
+.ipynb*
+__pycache__
