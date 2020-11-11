@@ -2,3 +2,4 @@ autos*
 .vscode
 .ipynb*
 __pycache__
+theta.csv
